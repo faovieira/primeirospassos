@@ -1,0 +1,20 @@
+
+from time import sleep
+print('#' * 20)
+print('GOSTARIA DE SABER SE VOCÊ PRECISA OU NÃO DECLARAR SEU IR?')
+print('#' * 20)
+
+salario = int(input('\nInforme o valor do seu salário: '))
+sleep(0.5)
+print('\n...')
+
+if salario <= 2112.01:
+    print('Não precisa declarar imposto de renda 2023!')
+elif salario < 2826.66:
+    print('Incide o percentual de 7,5% correspondente a R$ 158.40')
+elif salario < 3751.06:
+    print('Incide o percentual de 15% correspondente a R$ 370.40')
+elif salario < 4664.68:
+    print('Incide o percentual de 22.5% correspondente a R$ 651.73')
+else:
+    print('Incide o percentual de 27.5% correspondente a R$ 884.96')
